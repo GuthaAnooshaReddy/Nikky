@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bday.gif);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(brown.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -69,7 +69,6 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 0 0.8rem;
-
     transform: rotateY(-230deg) rotateX(20deg);
     position: absolute;
 }
@@ -84,8 +83,7 @@ body{
    font-weight: bold;
    transform: rotateY(180deg);
 }
-.frames:nth-child(1)
-{
+.frames:nth-child(1){
     top:-110px;
     z-index: -1;
     background-color: coral;
@@ -93,8 +91,26 @@ body{
 .frames:nth-child(2){
     background-color: goldenrod;
 }
-.frames:nth-child(3)
-{
+.frames:nth-child(3){
     top:100px;
     background-color: burlywood;
+}
+@media(max-width: 480px){
+    .container{
+        width:430px;
+        height:932px;
+    }
+    .card{
+        top:80px;
+        left:40px;
+    }
+    .inside{
+        top:80px !important;
+        left:40px !important;
+    }
+    .block{
+        position: absolute;
+        top: 660px;
+        left: -35px;
+    }
 }
